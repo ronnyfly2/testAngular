@@ -1,0 +1,52 @@
+@import './../../../../assets/styles/_variables.styl'
+header
+	font-size 0
+	width 100%
+	background white
+	border-bottom 1px solid #707070
+	.header_box
+		width 85%
+		margin 0 auto
+	h1
+	nav
+		display inline-block
+		vertical-align top
+	h1
+		max-width 280px
+		width 17.292%
+		img
+			width 100%
+			margin-top 15px
+	nav
+		width 82%
+		text-align right
+		ul
+			list-style none
+			li
+				display inline-block
+				margin 0 10px
+				width 100px
+				position relative
+				height 84px
+				&:last-child
+					margin-right 0
+				a
+					display block
+					font-size 14px
+					text-align center
+					color #544e51
+					position absolute
+					bottom 0
+					width 100%
+					&:after
+						content ''
+						display block
+						height 5px
+						border-radius 5px
+						background $PrimaryColor
+						margin-top 10px
+						width 100%
+					span
+						padding 0 5px
+						display block
+						font-size 96%
