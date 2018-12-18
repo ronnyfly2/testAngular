@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { CompleteComponent } from './components/complete/complete.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 @NgModule({
-  declarations: [
+	declarations: [
 		AppComponent,
 		HeaderComponent,
-		WelcomeComponent
+		WelcomeComponent,
+		CompleteComponent,
+		QuestionsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	imports: [
+		BrowserModule,
+		AppRoutingModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
