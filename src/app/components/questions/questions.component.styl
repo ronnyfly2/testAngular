@@ -21,6 +21,7 @@
 			text-align left
 			color #000000
 	&_child_item
+		position relative
 		width 434px
 		height 94.4px
 		border-radius 8px
@@ -31,7 +32,7 @@
 		display inline-block
 		margin 10.5px 0
 		span
-			font-size 18px
+			font-size 17px
 			font-weight 500
 			font-style normal
 			font-stretch normal
@@ -39,6 +40,9 @@
 			letter-spacing normal
 			text-align left
 			color #504f54
+			vertical-align middle
+			display inline-block
+			width 70%
 		&:nth-child(even)
 			margin-right 29px
 		.img
@@ -48,13 +52,34 @@
 			object-fit contain
 			display inline-block
 			vertical-align middle
+			margin-right 20px
 			img
 				width 100%
+.info_tooltip
+	cursor pointer
+	position absolute
+	top 10px
+	right 10px
 .ctn_box_toltip
 	width 385px
 	opacity 0.97
 	background-color #1995a0
 	padding 23px
+	position absolute
+	z-index 3
+	top 32px
+	right -6%
+	border-radius 8px
+	&::after
+		content ""
+		position absolute
+		bottom 100%
+		right 10%
+		margin-left -5px
+		border-width 5px
+		border-style solid
+		border-color transparent transparent #1995a0 transparent
 	span
 		color white
 		font-size 14px
+		width 100%

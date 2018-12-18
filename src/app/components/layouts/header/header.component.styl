@@ -25,10 +25,13 @@ header
 			list-style none
 			li
 				display inline-block
-				margin 0 10px
-				width 100px
+				margin 0 .5%
+				max-width 100px
+				width 10%
 				position relative
 				height 84px
+				&:hover
+					background #ededed
 				&:last-child
 					margin-right 0
 				a
@@ -39,6 +42,10 @@ header
 					position absolute
 					bottom 0
 					width 100%
+					&:hover
+						text-decoration none
+						span
+							color #9d1c1d
 					&:after
 						content ''
 						display block
