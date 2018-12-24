@@ -7,28 +7,30 @@
 	<br>
 	<span>Para utilizar IDENTI-PAT sólo ingresa tu número de documento de identidad (si eres peruano utiliza el número de tu DNI y si eres extranjero utiliza tu número de carné de extranjería) y responde el breve cuestionario que será realizado.</span>
 </div>
-<div class="form_welcome">
+<div class="form_welcome form-row">
 	<div class="label_span">
 		<span>Selecione el tipo de documento:</span>
 	</div>
-	<fieldset class="first_child">
-		<label for=""></label>
-		<div class="select">
-			<div class="select_item">
-				<span>DNI</span>
-				<div class="icon icon_arrow_down"></div>
+	<div class="col-md-6">
+		<fieldset class="">
+			<div class="select">
+				<div class="select_item">
+					<span>DNI</span>
+					<div class="icon icon_arrow_down"></div>
+				</div>
+				<ul>
+					<li>DNI</li>
+					<li>RUC</li>
+				</ul>
 			</div>
-			<ul>
-				<li>DNI</li>
-				<li>RUC</li>
-			</ul>
-		</div>
-	</fieldset>
-	<fieldset class="last_child">
-		<label for=""></label>
-		<input type="text" placeholder="Número">
-	</fieldset>
-	<button class="btn_block">INICIAR</button>
+		</fieldset>
+	</div>
+	<div class="col-md-6">
+		<fieldset class="">
+			<input type="text" placeholder="Número">
+		</fieldset>
+	</div>
+	<button class="btn_block" (click)="getLink()">INICIAR</button>
 </div>
 <div class="advice">
 	<h5>AVISO:</h5>

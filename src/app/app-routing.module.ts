@@ -8,7 +8,7 @@ import { ReportsComponent } from './components/reports/reports.component';
 
 
 const routes: Routes = [
-	{path:'welcome', component:WelcomeComponent},
+	{path:'', component:WelcomeComponent},
 	{path:'form', component:CompleteComponent},
 	{path:'questions', component:QuestionsComponent},
 	{path:'reports', component:ReportsComponent},

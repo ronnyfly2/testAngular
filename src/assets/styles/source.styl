@@ -2,6 +2,10 @@
 body
 	background-color $bgColor
 	text-align center
+main
+	background-image url('./assets/images/bg_principal.png')
+	background-repeat no-repeat
+	background-position -27%
 h2
 	font-size 47px
 	color $PrimaryColor
@@ -23,11 +27,11 @@ span
 	height 100%
 	vertical-align middle
 fieldset
-	width 50%
+	width 100%
 	font-size 0
 	display inline-block
 	margin 15px 0
-	vertical-align top
+	vertical-align text-bottom
 	max-width 256px
 	&.last_child
 		margin-right 0
@@ -36,7 +40,7 @@ fieldset
 label
 	color #504f54
 	font-size 1.12rem
-	line-height 2
+	line-height 1.3
 	opacity 0.43
 	display block
 	text-align left
@@ -55,7 +59,7 @@ button
 .btn
 	background $SecondaryColor
 	border none
-	outline 0
+	outline none !important
 	max-width 320px
 	color white
 	border-radius 8px
